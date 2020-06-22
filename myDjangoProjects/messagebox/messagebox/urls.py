@@ -19,5 +19,5 @@ from main import views as my_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', my_views.home)
+    path('', my_views.home, name='home')
 ]
