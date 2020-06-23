@@ -11,4 +11,4 @@ class Person(models.Model):
     full_name = property(_get_full_name)
     
     def __str__(self):
-        return "{0"
+        return "{0}".format(self.full_name)
