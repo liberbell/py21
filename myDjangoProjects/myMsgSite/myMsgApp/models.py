@@ -19,3 +19,4 @@ class Mail(models.Model):
                            ('MF', 'Matt Foster'),
                            )
     mail_to = models.CharField(max_length=2, choices=MAILING_LIST_CHOISE, default='GO', verbose_name='Send mail to')
+    subject = models.CharField(max_length=150, blank=False)
