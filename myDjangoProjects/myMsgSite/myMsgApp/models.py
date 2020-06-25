@@ -12,6 +12,7 @@ class Person(models.Model):
     
     def __str__(self):
         return "{0}".format(self.full_name)
+        
 class Mail(models.Model):
     MAILING_LIST_CHOISES = (
                            ('GO', 'Gina Ortiz'),
