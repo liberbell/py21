@@ -23,3 +23,6 @@ class Mail(models.Model):
     mail_date = models.DateTimeField(auto_now=True)
     message = models.TextField(blank=False)
     person = models.ForeignKey(Person, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return "Message from {0} to {1} on {2}.".format(self.person, self.mail_to, self.mail_date)
