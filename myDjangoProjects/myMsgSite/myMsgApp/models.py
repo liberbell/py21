@@ -22,4 +22,4 @@ class Mail(models.Model):
     subject = models.CharField(max_length=150, blank=False)
     mail_date = models.DateTimeField(auto_now=True)
     message = models.TextField(blank=False)
-    
+    person = models.ForeignKey(Person, on_delete=models.CASCADE)
