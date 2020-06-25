@@ -12,12 +12,12 @@ class Person(models.Model):
     
     def __str__(self):
         return "{0}".format(self.full_name)
-        
+
 class Mail(models.Model):
     MAILING_LIST_CHOISES = (
                            ('GO', 'Gina Ortiz'),
                            ('RT', 'Rick Tallon'),
-                           ('MF', 'Matt Foster'),
+                           ('MF', 'Matt Foster')
                            )
     mail_to = models.CharField(max_length=2, choices=MAILING_LIST_CHOISES, default='GO', verbose_name='Send mail to')
     subject = models.CharField(max_length=150, blank=False)
