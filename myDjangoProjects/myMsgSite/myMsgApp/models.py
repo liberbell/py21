@@ -20,3 +20,6 @@ class Mail(models.Model):
                            )
     mail_to = models.CharField(max_length=2, choices=MAILING_LIST_CHOISE, default='GO', verbose_name='Send mail to')
     subject = models.CharField(max_length=150, blank=False)
+    mail_date = models.DateTimeField(auto_now=True)
+    message = models.TextField(blank=False)
+    
