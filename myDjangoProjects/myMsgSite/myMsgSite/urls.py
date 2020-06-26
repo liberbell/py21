@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from myMsgApp import views as my_views
-from django.contrib.auth.views import views as admin_views
+from django.contrib.auth import views as admin_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
