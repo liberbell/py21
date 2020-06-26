@@ -16,4 +16,5 @@
                   <form role="form" class="form-horizontal" method="POST" action="">
                       {% csrf_token %}
                       {{ form }}
-                      <input class="btn btn-primary"
+                      <input class="btn btn-primary" type="submit" value="Login" />
+                      <input type="hidden" name="next" value="{{ next }}" />
