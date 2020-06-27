@@ -22,5 +22,5 @@ from django.contrib.auth import views as admin_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', my_views.home, name='home'),
-    path('login/$', admin_views.login, {'template_name':'login.html'}, name='mymsgsite_login'),
+    path('login/', admin_views.login, {'template_name':'login.html'}, name='mymsgsite_login'),
 ]
