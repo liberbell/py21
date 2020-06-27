@@ -17,11 +17,11 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
 from myMsgApp import views as my_views
-from django.contrib.auth import views as admin_views
+from django.contrib.auth.views import views, login as admin_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', my_views.home, name='home'),
     # path('login/', my_views.Login.admin_view(), {'template_name':'login.html'}, name='mymsgsite_login'),
-    path('login/', admin_views.Login.as_view(), {'template_name':'login.html'}, name='mymsgsite_login'),
+    path('login/', login, {'template_name':'login.html'}, name='mymsgsite_login'),
 ]
