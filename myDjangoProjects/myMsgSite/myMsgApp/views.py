@@ -8,3 +8,8 @@ def home(request):
                  })
                 #   {'h1Text': 'MessageBox',
                 #   'pText': 'Welcome to the Message Box App! Click Login button below to begin.'})
+
+def about(request):
+    return render(request, "myMsgApp/about.html",
+                 {'message': 'Some content on About page.'
+                 })
