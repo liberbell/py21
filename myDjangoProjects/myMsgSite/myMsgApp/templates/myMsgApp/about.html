@@ -1,0 +1,20 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="{% static 'bootstrap-4.5.0-dist/css/bootstrap.min.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h2> {{ h1tText }} </h2>
+                <p> {{ pText }} </p>
+                <button type="button" class="btn btn-primary">Login</button>
+            </div>
+        </div>
+
+            <script src="{% static 'jquery-3.5.1.js' %}"></script>
+            <script src="{% static 'bootstrap-4.5.0-dist/js/bootstrap.min.js' %}"></script>
+    </body>
+</html>
