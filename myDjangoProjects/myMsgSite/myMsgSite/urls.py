@@ -25,4 +25,5 @@ urlpatterns = [
     # path('login/', my_views.Login.admin_view(), {'template_name':'login.html'}, name='mymsgsite_login'),
     # path('login/', login, {'template_name':'login.html'}, name='mymsgsite_login'),
     path('login/', admin_views.LoginView.as_view(template_name='login.html'), name='mymsgsite_login'),
+    path('about/', my_views.about, name='about'),
 ]
